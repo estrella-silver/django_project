@@ -1,0 +1,38 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Modak" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+<title>~wordcount~world~</title>
+</head>
+
+<body style="background-color:rgb(224, 168, 230);Text-align: center;">
+<h1 style="color:blueviolet; font-family: 'Just Another Hand', cursive; font-size: 70px;">Wordcount Home</h1>
+
+<a href="{% url 'about' %}" style="font-size: 30px; font-family: 'Just Another Hand', cursive;">ABOUT</a>
+<br>
+<br>
+<form action="{% url 'count' %}">
+    <textarea cols="100" rows="20" name="fulltext"></textarea>
+	<br>
+	<br>
+    <input type = "submit" value = "Count!" style="background: blueviolet;
+	background-image: -webkit-linear-gradient(top, blueviolet, #d66eff);
+	background-image: -moz-linear-gradient(top, blueviolet, #d66eff);
+	background-image: -ms-linear-gradient(top, blueviolet, #d66eff);
+	background-image: -o-linear-gradient(top, blueviolet, #d66eff);
+	background-image: linear-gradient(to bottom, blueviolet, #d66eff);
+	-webkit-border-radius: 8;
+	-moz-border-radius: 8;
+	border-radius: 8px;
+	font-family: 'Just Another Hand', cursive;
+	color: #ffffff;
+	font-size: 40px;
+	padding: 10px 10px 10px 10px;
+	text-decoration: none;
+	width: 15%;
+	margin:auto;"/>
+</form>
+</body>
